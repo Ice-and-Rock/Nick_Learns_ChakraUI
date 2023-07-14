@@ -1,26 +1,25 @@
 import { Box, Container, Heading, Text } from "@chakra-ui/react";
 
 export default function Dashboard() {
-
-const boxStyles ={
-  //padding
-  p: '10px',
-  //backgorund color
-  bg: 'purple.400',
-  //text color
-  color: 'white',
-  //margin 
-  m: "10px",
-  //textAlign
-  textAlign: 'center',
-  //blur filter
-  filter: 'blur(2px)',
-  //hover with mouse
-  ':hover': {
-    color: 'black',
-    bg: 'blue.200'
-  }
-}
+  const boxStyles = {
+    //padding
+    p: "10px",
+    //backgorund color
+    bg: "purple.400",
+    //text color
+    color: "white",
+    //margin
+    m: "10px",
+    //textAlign
+    textAlign: "center",
+    //blur filter
+    filter: "blur(2px)",
+    //hover with mouse
+    ":hover": {
+      color: "black",
+      bg: "blue.200",
+    },
+  };
 
   return (
     <Container as="section" maxWidth="4xl" py="20px">
@@ -35,9 +34,7 @@ const boxStyles ={
         <Text color="white">This is a box</Text>
       </Box>
 
-      <Box sx={boxStyles}>
-        Hello, people who are looking at my work...
-      </Box>
+      <Box sx={boxStyles}>Hello, people who are looking at my work...</Box>
     </Container>
   );
 }
