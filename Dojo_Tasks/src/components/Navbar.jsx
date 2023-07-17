@@ -8,9 +8,9 @@ const Navbar = () => {
 
       <HStack spacing="20px">
         <Box bg="grey.200" p="10px">
-          M
+          Mmmm
         </Box>
-        <Text>Mario@netninja.dev</Text>
+        <Text>nicholas@valente-engineering.com</Text>
         <Button colorScheme="purple">Logout</Button>
       </HStack>
     </Flex>
