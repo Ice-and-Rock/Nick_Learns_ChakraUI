@@ -26,7 +26,7 @@ export default function Dashboard() {
       <Heading my="30px" p="10px">
         Chakra UI Components
       </Heading>
-      <Text merginLeft="30px">This is where the test goes, nick!</Text>
+      <Text ml="30px">This is where the test goes, nick!</Text>
       <Text ml="30px" color="blue.300" fontWeight="bold">
         This is where the text goes, nick!
       </Text>
@@ -34,7 +34,7 @@ export default function Dashboard() {
         <Text color="white">This is a box</Text>
       </Box>
 
-      <Box sx={boxStyles}>Hello, people who are looking at my work...</Box>
+      <Box style={boxStyles}>Hello, people who are looking at my work...</Box>
     </Container>
   );
 }
