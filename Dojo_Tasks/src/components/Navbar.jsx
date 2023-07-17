@@ -2,7 +2,7 @@ import { Box, Button, Flex, Heading, HStack, Spacer, Text } from "@chakra-ui/rea
 
 const Navbar = () => {
   return (
-    <Flex as="nav" p="10px" alignItems="center">
+    <Flex as="nav" p="10px" marginBottom="40px" alignItems="center">
       <Heading as="h1">Dojo Tasks</Heading>
       <Spacer />
 
