@@ -54,4 +54,5 @@ Form Fields
  - redirect from React-Router-DOM, used in return statemtnt for create 'Action' function
 
  Toast Component
+ Used to give feedback to users after an action has taken place
  - 
