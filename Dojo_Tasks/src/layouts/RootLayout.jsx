@@ -5,24 +5,20 @@ import Sidebar from "../components/Sidebar";
 
 export default function RootLayout() {
   return (
-    <Grid templateColumns="repeat(6, 1fr)" bg="grey.50">
+    <Grid templateColumns="repeat(6, 1fr)" bg="brand.100">
       <GridItem
         as="aside"
-        colSpan={{ base:6, lg:1, xl:1 }}
-        bg="purple.400"
+        colSpan={{ base: 6, lg: 1, xl: 1 }}
+        bg="brand.300"
         // minHeight is set to full screen
         minHeight={{ lg: "100vh" }}
         // added minWidth, so text doesn't flex into column
         minWidth="181px"
         p={{ base: "20px", md: "30px" }}
       >
-        <Sidebar/>
+        <Sidebar />
       </GridItem>
-      <GridItem 
-      as="main" 
-      colSpan={{ base:6, lg:4, xl:5 }} 
-      p="40px"
-      >
+      <GridItem as="main" colSpan={{ base: 6, lg: 4, xl: 5 }} p="40px">
         <Navbar />
         <Outlet />
       </GridItem>

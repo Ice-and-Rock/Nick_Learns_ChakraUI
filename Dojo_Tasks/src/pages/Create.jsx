@@ -16,10 +16,10 @@ export default function Create() {
       <Form method="post" action="/create">
         <FormControl isRequired mb="4px">
           <FormLabel>Task name:</FormLabel>
-          <Input type="text" name="title" />
+          <Input type="text" name="title" borderColor="brand.500" />
           <FormHelperText>Enter a descriptive task name.</FormHelperText>
         </FormControl>
-        <FormControl>
+        <FormControl borderColor="brand.500" marginBottom="10px">
           <FormLabel>Task description:</FormLabel>
           <Textarea
             placeholder="Enter a detailed descrition of the task..."
@@ -27,12 +27,19 @@ export default function Create() {
           ></Textarea>
         </FormControl>
         <FormControl display="flex" alignItems="center" mb="40px">
-          <Checkbox name="isPriority" size="lg" color="purple.400" />
+          <Checkbox
+            borderColor="brand.400"
+            name="isPriority"
+            size="lg"
+            color="purple.400"
+          />
           <FormLabel marginBottom="0" ml="10px">
             Make this a priority task.
           </FormLabel>
         </FormControl>
-        <Button type="submit">Submit!</Button>
+        <Button bg="brand.400" type="submit">
+          Submit!
+        </Button>
       </Form>
     </Box>
   );

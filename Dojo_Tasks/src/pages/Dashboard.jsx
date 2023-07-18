@@ -13,6 +13,7 @@ import {
   HStack,
   Button,
   Divider,
+  Avatar,
 } from "@chakra-ui/react";
 import { useLoaderData } from "react-router-dom";
 
@@ -24,30 +25,49 @@ export default function Dashboard() {
     <SimpleGrid spacing={10} minChildWidth="300px">
       {tasks &&
         tasks.map((task) => (
-          <Card key={task.id} borderTop="8px" borderColor="purple.400" bg="white">
+          <Card
+            key={task.id}
+            color="brand.500"
+            borderTop="8px"
+            borderColor="brand.500"
+            bg="white"
+            style={{
+              boxShadow: "7px 17px 27px #8e6f57, 7px 7px 7px #c49977",
+            }}
+          >
             <CardHeader>
               <Flex gap={5}>
-                <Box w="50px" h="50px">
-                  AW
-                </Box>
+                <Avatar src={task.img} />
                 <Box>
-                  <Heading as="a3" size="sm">
+                  <Heading as="h3" size="sm">
                     {task.title}
                   </Heading>
                   <Text>{task.author}</Text>
                 </Box>
               </Flex>
             </CardHeader>
-            <CardBody color="gray.500">
+            <CardBody color="brand.500">
               <Text>{task.description}</Text>
             </CardBody>
 
-<Divider/>
+            <Divider />
 
             <CardFooter>
               <HStack>
-                <Button variant="ghost" leftIcon={<ViewIcon />}>Watch</Button>
-                <Button variant="ghost" leftIcon={<EditIcon />}>Comment</Button>
+                <Button
+                  color="brand.300"
+                  variant="ghost"
+                  leftIcon={<ViewIcon />}
+                >
+                  Watch
+                </Button>
+                <Button
+                  color="brand.300"
+                  variant="ghost"
+                  leftIcon={<EditIcon />}
+                >
+                  Comment
+                </Button>
               </HStack>
             </CardFooter>
           </Card>

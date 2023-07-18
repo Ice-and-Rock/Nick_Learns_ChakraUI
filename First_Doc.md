@@ -5,6 +5,7 @@ npm run dev
 // Quickstart for components
 rfc = React Functional Component
 
+
 Day 1 - slowing taking on board the ways to change in-line styles and native components to chakra
 Day 2 - spent 1 hour finding a rednering error... Forgot to import <Text /> into chakra components. Doh!
 
@@ -38,6 +39,9 @@ Card component
 - Add icons to existing JSX components <button> as a JSX object {<ViewIcon>}
 - increase the responsive nature of the buttons by adding a variant:'ghost'
 
+
+Day 3 - 40 mins spent finding as issue with name="a3", renamed to be header. Doh!
+
 Form Fields
 - Create an input form using following elements from ChakraUI:
 <Box> grouping
@@ -54,5 +58,18 @@ Form Fields
  - redirect from React-Router-DOM, used in return statemtnt for create 'Action' function
 
  Toast Component
- Used to give feedback to users after an action has taken place
- - 
+ Like a pop-up used to give feedback to users after an action has taken place
+ - apply a new funciton to an onClick event for 'Logout'
+ - envoke the Chakra component useToast() inside this function
+ - change the properties of the toast
+ + color, icon, heater, body text 
+
+Avatar components
+For small photos with static or dynamic properties
+- using tags: 
+<Avatar> for image
+<AvatarBadge> for alerts and updates. Should contain <text>
+
+Chakra Themes
+Breakpoints, colour shcemes, sizes etc
+- 

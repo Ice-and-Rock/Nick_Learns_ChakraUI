@@ -1,17 +1,56 @@
-import { Box, Button, Flex, Heading, HStack, Spacer, Text } from "@chakra-ui/react";
+import { UnlockIcon } from "@chakra-ui/icons";
+import {
+  Avatar,
+  AvatarBadge,
+  Box,
+  Button,
+  Flex,
+  Heading,
+  HStack,
+  Spacer,
+  Text,
+  useToast,
+} from "@chakra-ui/react";
 
 const Navbar = () => {
+  // use Chakra's Toast component for pop-up alerts
+  const toast = useToast();
+
+  // add a toast funciton for a pop-up box
+  // use an onClick event form the logout button
+  const showToast = () => {
+    toast({
+      title: "Logged out",
+      description: "You've been logged out!",
+      duration: 5000,
+      isClosable: true,
+      status: "success",
+      position: "top",
+      // change for a different icon
+      icon: <UnlockIcon />,
+    });
+  };
+
   return (
     <Flex as="nav" p="10px" marginBottom="40px" alignItems="center">
-      <Heading as="h1">Dojo Tasks</Heading>
+      <Heading as="h1">Tasks to complete</Heading>
+
       <Spacer />
 
       <HStack spacing="20px">
-        <Box bg="grey.200" p="10px">
-          Mmmm
-        </Box>
+        // below is the avatar with a static AvatarBadge // can be changed for a
+        dynamic data on how mnay tasks have been completed etc
+        <Avatar src="../../public/img/mario.png">
+          <AvatarBadge width="1.3em" bg="teal.400">
+            <Text fontSize="xs" color="white">
+              3
+            </Text>
+          </AvatarBadge>
+        </Avatar>
         <Text>nicholas@valente-engineering.com</Text>
-        <Button colorScheme="purple">Logout</Button>
+        <Button bg="brand.300" onClick={showToast}>
+          Logout
+        </Button>
       </HStack>
     </Flex>
 
