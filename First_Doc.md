@@ -37,3 +37,21 @@ Card component
 - Chakra components: Card ; CardHeader ; CardBody ; CardFooter
 - Add icons to existing JSX components <button> as a JSX object {<ViewIcon>}
 - increase the responsive nature of the buttons by adding a variant:'ghost'
+
+Form Fields
+- Create an input form using following elements from ChakraUI:
+<Box> grouping
+<Form> used for the fetch request and data handling
+<FormControl> used for input requirements: isRequired etc
+<FormLabel> a simple title 
+<Input> remember to specify input type
+- needs 'name:' for data handling
+<TextArea> gives a text box, placeHolder can be included
+- needs 'name:' for data handling
+<CheckBox> simple, gives a boolean statement
+<Button> give this a type: 'submit' so the data in the form renders in the 'Header'
+ 
+ - redirect from React-Router-DOM, used in return statemtnt for create 'Action' function
+
+ Toast Component
+ - 

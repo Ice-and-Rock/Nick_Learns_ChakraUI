@@ -8,16 +8,19 @@ export default function RootLayout() {
     <Grid templateColumns="repeat(6, 1fr)" bg="grey.50">
       <GridItem
         as="aside"
-        colSpan={{ base:6, lg:2, xl:1 }}
+        colSpan={{ base:6, lg:1, xl:1 }}
         bg="purple.400"
+        // minHeight is set to full screen
         minHeight={{ lg: "100vh" }}
+        // added minWidth, so text doesn't flex into column
+        minWidth="181px"
         p={{ base: "20px", md: "30px" }}
       >
         <Sidebar/>
       </GridItem>
       <GridItem 
       as="main" 
-      colSpan={{ base:6, lg:4, xl:6 }} 
+      colSpan={{ base:6, lg:4, xl:5 }} 
       p="40px"
       >
         <Navbar />
