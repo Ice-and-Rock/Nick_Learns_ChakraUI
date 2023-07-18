@@ -20,7 +20,11 @@ const fonts = {
 };
 
 // add the theme to the rest of the Chakra library using <ChakraProvider>
-const theme = extendTheme({ colors, fonts });
+const theme = extendTheme({
+  colors,
+  fonts,
+
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   // 2. Wrap ChakraProvider at the root of your app

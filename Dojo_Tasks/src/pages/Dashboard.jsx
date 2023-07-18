@@ -29,11 +29,15 @@ export default function Dashboard() {
             key={task.id}
             color="brand.500"
             borderTop="8px"
-            borderColor="brand.500"
+            borderColor="brand.300"
             bg="white"
-            style={{
-              boxShadow: "7px 17px 27px #8e6f57, 7px 7px 7px #c49977",
-            }}
+            
+            boxShadow="5px 5px 10px #93735a, 3px 3px 10px #bf9574"
+            _hover={{
+    boxShadow: "7px 7px 27px #8e6f57, 7px 7px 7px #c49977",
+    color: "brand.500",
+  }}
+          
           >
             <CardHeader>
               <Flex gap={5}>

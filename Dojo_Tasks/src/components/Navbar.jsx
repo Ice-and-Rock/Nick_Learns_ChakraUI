@@ -22,7 +22,7 @@ const Navbar = () => {
     toast({
       title: "Logged out",
       description: "You've been logged out!",
-      duration: 5000,
+      duration: 3000,
       isClosable: true,
       status: "success",
       position: "top",

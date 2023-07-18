@@ -9,7 +9,7 @@ export default function RootLayout() {
       <GridItem
         as="aside"
         colSpan={{ base: 6, lg: 1, xl: 1 }}
-        bg="brand.300"
+        bgGradient="linear(to-b, brand.300, brand.100)"
         // minHeight is set to full screen
         minHeight={{ lg: "100vh" }}
         // added minWidth, so text doesn't flex into column
