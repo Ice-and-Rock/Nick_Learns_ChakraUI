@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <Flex as="nav" p="10px" marginBottom="40px" alignItems="center">
-      <Heading as="h1">Tasks to complete</Heading>
+      <Heading as="h1">Nick's Task log...</Heading>
 
       <Spacer />
 
