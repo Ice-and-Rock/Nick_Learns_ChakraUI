@@ -2,7 +2,7 @@
 
 ---
 
-# Chakra UI works really well with React Apps
+Chakra UI works really well with React Apps
 
 - I also created a Post request to capture the data in the create form
 
