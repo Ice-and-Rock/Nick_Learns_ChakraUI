@@ -1,6 +1,14 @@
-hey nick! 
+## hey nick! 
+
+---
+
+# Chakra UI project
+
+---
+
 
 npm run dev
+npx json-server --watch ./data/db.json --port 8000
 
 // Quickstart for components
 rfc = React Functional Component
