@@ -81,3 +81,12 @@ For small photos with static or dynamic properties
 Chakra Themes
 Breakpoints, colour shcemes, sizes etc
 - 
+
+---
+
+# Deloying to Netlify
+
+instead of using json-server, create a custom function file that returns static data in json form:
+https://docs.netlify.com/functions/create/?fn-language=js
+
+
